@@ -1,0 +1,20 @@
+module.exports = {
+  type: 'postgres',
+  host: process.env.POSTGRES_HOST,
+  port: process.env.POSTGRES_PORT,
+  username: process.env.POSTGRES_USER,
+  password: process.env.POSTGRES_PASSWORD,
+  database: process.env.POSTGRES_DB,
+  synchronize: false,
+  // logging: process.env.NODE_ENV !== 'production',
+  logging: false,
+  schema: process.env.POSTGRES_SCHEMA,
+  entities: ['dist/database/entities/*.js', 'src/database/entities/*.ts'],
+  migrations: ['dist/database/migrations/*.js', 'src/database/migrations/*.ts'],
+  // subscribers: ['dist/database/subscribers/*.js', 'src/database/subscribers/*.ts'],
+  cli: {
+    entitiesDir: 'src/database/entities',
+    migrationsDir: 'src/database/migrations',
+    subscribersDir: 'src/database/subscribers',
+  },
+};

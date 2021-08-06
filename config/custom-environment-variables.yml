@@ -1,0 +1,16 @@
+---
+env: ENV
+host: HOST
+port: PORT
+name: NAME
+developers: DEVELOPERS
+http:
+  allow_origin: HTTP_ALLOW_ORIGIN
+postgres:
+  host: POSTGRES_HOST
+  port: POSTGRES_PORT
+  username: POSTGRES_USERNAME
+  password: POSTGRES_PASSWORD
+  db: POSTGRES_DB
+  schema: POSTGRES_SCHEMA
+secret: SECRET

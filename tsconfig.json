@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "lib": ["es5", "es6"],
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,
+        "target": "es6",
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "outDir": "dist",
+        "baseUrl": ".",
+        "paths": {
+            "*": ["node_modules/*", "src/types/*"]
+        },
+        "types": ["reflect-metadata"],
+        "typeRoots": ["./src/types/", "./node_modules/@types"],
+        "skipLibCheck": true
+    },
+    "include": ["src/**/*"]
+}

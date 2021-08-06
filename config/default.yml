@@ -1,0 +1,16 @@
+---
+env: local
+host: ''
+port: '3200'
+name: ''
+developers: ''
+http:
+  allow_origin: ''
+postgres:
+  host: ''
+  port: ''
+  username: ''
+  password: ''
+  db: ''
+  schema: ''
+secret: ''
